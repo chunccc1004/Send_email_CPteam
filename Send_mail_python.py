@@ -23,6 +23,10 @@ def send_email(smtp_info, msg):
         else:
             print(response)
 
+def mail_html():
+    f = open("index.txt",'r')
+    
+
 # me == my email address
 # you == recipient's email address
 me = "chunccc1004@naver.com"
@@ -46,7 +50,8 @@ html = """\
 #개선해야할 점 : html은 메모장에서 추출해서 사용하되 img파일만 따로
 #사용 방법은 네이버에서 메일보내는걸로 만든 후에 html 코드 복사 붙여넣기 메모장으로 해서 놓고 이미지 파일 놓으면 exe로 실행시켜서 메일 보내기
 #보내야하는 이메일 주소도 크롤링 해야하고 메일 주소 이상한건 제외하는 것도 해야하고 중복 메일도 체크해야할 듯
-# Record the MIME types of both parts - text/plain and text/html.
+#Record the MIME types of both parts - text/plain and text/html.
+#내게 보내기로 확인 후 전체에게 보내는게 좋을 듯
 part2 = MIMEText(html, 'html')
 
 # Attach parts into message container.
