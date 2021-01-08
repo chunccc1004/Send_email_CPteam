@@ -1,3 +1,7 @@
+import os
+print(os.getcwd())
+
+"""
 def mail_html():
     s_order = []
     img_address = []
@@ -29,3 +33,4 @@ def mail_html():
     
 
 mail_html()
+"""
